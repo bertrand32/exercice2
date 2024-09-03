@@ -1,0 +1,33 @@
+li{
+    margin-left: 2rem;
+
+    .nav-link:hover,
+    .nav-link.active{
+        color: #ffa600 !important;
+    }
+    .nav-link{
+        color: #759bbe ;
+        font-weight: 500;
+    }
+}
+.d-flex{
+    margin-left: 15rem;
+}
+.icon hr{
+    position: absolute;
+    left: 3%;
+    bottom: -15%;
+    right: 0;
+    width: 64rem;
+    color: #1d3142 !important;
+    }
+img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+i{
+    margin-top: 14px; 
+    font-size: 30px;
+    margin-right: 50px;
+    }

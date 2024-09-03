@@ -1,0 +1,45 @@
+<section>
+    <div class="container">
+        <div class="row mt-5 sm-5">
+          <div class="col-12 col-sm-6 col-md-4 ms-5">
+            <img [src]="mainImageUrl" class="w-100 h-100 " alt="">
+            <div class="logo">
+              <div class="image" (click)="changeMainImage(image1Url)">
+                <img [src]="image1Url" class="w-100 h-100" alt="">
+              </div>
+              <div class="image" (click)="changeMainImage(image2Url)">
+                <img [src]="image2Url" class="w-100 h-100" alt="">
+              </div>
+              <div class="image" (click)="changeMainImage(image3Url)">
+                <img [src]="image3Url" class="w-100 h-100" alt="">
+              </div>
+              <div class="image" (click)="changeMainImage(image4Url)">
+                <img [src]="image4Url" class="w-100 h-100" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 offset-1 gy-5">
+            <div class="cog">
+                <h5 style="color: #ffa600;" class="fw-normal">SNEAKER COMPANY</h5>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <span class="text" style="color: #708ca7;">Tehse low-profile sneakers are your perfect casual wear xompamiom.Featuring a durable rubber outer sole,they'll <br>withstand everything the weather can offer.</span>
+                <h4 class="py-2">$125.00 <span class="text-warning">50%</span></h4>
+                <h6 style="color: #708ca7;">$250.00 <hr></h6>
+            </div>
+            <div class="cogs ms-2">
+               <div class="row mt-4">
+                   <div class="col-md-3 d-flex align-items-center justify-content-center">
+                     <button class="icons text-warning" id="minus" (click)="decrement()">-</button>
+                     <span class="mx-4" id="show">{{ count }}</span>
+                     <button class="icons text-warning" id="plus" (click)="increment()">+</button>
+                   </div>
+                   <div class="col-md-5">
+                     <button class="btn btn-primary"><i class='bx bxs-cart-alt' style="font-size: 26px;"></i>add to cart</button>
+                   </div>
+               </div>
+            </div>
+         </div>
+            
+        </div>
+    </div> 
+</section>
